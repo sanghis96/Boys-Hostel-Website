@@ -352,7 +352,7 @@
                             <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
                         </div>
                         <div class="modal-body">
-                            <form role="form">
+                            <form role="form" action="log.php">
                                 <div class="form-group">
                                     <label for="email"><span class="glyphicon glyphicon-user"></span> Username</label>
                                     <input type="email" class="form-control" id="email" placeholder="Enter email">
