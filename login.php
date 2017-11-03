@@ -1,11 +1,7 @@
 <?php
 //session_start();
-$link = mysqli_connect('localhost', 'root', '', 'hostel');
- 
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+
+require 'connectToDB.php';
 
 
 $username = $_POST['user'];

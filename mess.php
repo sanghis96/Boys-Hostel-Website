@@ -1,8 +1,8 @@
     
-    <!--  HPL Event  -->
-        <div  id="hpl" class="content">
+    <!--  Mess Section  -->
+        <div id="mess" class="content">
             <div class="container-fluid slideanim">
-                <div class="title slideanim"> HPL</div>
+                <div class="title slideanim"> MESS</div>
                 <div class="container-fluid">
                     <div class="jumbotron" style="padding:20px;">
                         <h3 class="text-info"><strong>About</strong></h3>
@@ -17,4 +17,4 @@
                 </div>
             </div>
         </div>
-    <!--  End HPL Event  -->
+    <!--  End Mess Section  -->

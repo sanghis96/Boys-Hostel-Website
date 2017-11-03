@@ -12,214 +12,11 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <!-- <link rel="stylesheet" type="text/css" href="css/loader.css">  -->
         <style>
-            body 
-            {  
-                position: relative; 
-                font: 400 15px Lato, sans-serif;
-                line-height: 1.8;
-                color: #818181;  
-            }
-            .title 
-            {
-                font-size: 30px;
-                text-transform: uppercase;
-                text-align:center;
-                color: #b30000;
-                font-weight: 600;
-                margin-bottom: 30px;
-            }
-            .background-img 
-            {      
-                height:600px;
-                font-family: 'Trebuchet MS', Helvetica, sans-serif;
-                background-image: url("images/imghostel2.jpg");
-                background-size: cover;
-                color:#333333;
-                text-align: center;
-            }
-            .background-img a 
-            {
-                color: #0000FF;
-                font-size: 1.25em;
-                text-decoration: none;
-            }
-            .background-img a:hover {   color:white;   }
-            .affix 
-            {    
-                top: 0;
-                width: 100%;
-                z-index: 9999 !important;
-            }
-            .navbar 
-            {   
-                background-color:#b30000;
-                border:0;
-                border-radius:0;
-                margin-bottom: 0px;
-            }
-            .navbar-brand
-            {
-                color: #fff !important;
-                font-size:22px;
-            }
-            .affix ~ .container-fluid 
-            { 
-                position: relative;
-                top: 50px;
-            }
-            .contact-btn 
-            {
-                background-color: #ff4d4d;
-                cursor: pointer;
-            }
-            .contact-btn:active 
-            {
-                top: 2px;
-            }
-            .modal-header, h4, .close 
-            {
-                background-color: #b30000;
-                color:white !important;
-                text-align: center;
-                font-size: 30px;
-            }
-            .error {color: #FF0000;}
-            .content {  display: none;  }
-            .jumbotron 
-            {
-                background-color: #ffffff;
-                color: #000000;
-                padding: 100px 25px;
-                font-family: Montserrat, sans-serif;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            }
-            #about 
-            {
-                padding:50px 0px 50px 0px;
-                color:#fff;
-                background-color:#9999ff;
-            }
-            #event
-            {
-                padding:50px 0px 50px 0px;
-                color:#fff;
-                background-color:white;
-            } 
-            #comities
-            {
-                padding:50px 0px 50px 0px;
-                color:#fff;
-                background-color:#a64dff;
-            }
-            .carousel-inner > .item > img,
-            .carousel-inner > .item > a > img 
-            {   width: 70%;  margin: auto;   }
-            .carousel-control.right, .carousel-control.left 
-            {
-                background-image: none;
-                color: #b30000;
-            }
-            .carousel-indicators li
-            {
-                border-color: #b30000;
-            }
-            .carousel-indicators li.active
-            {
-                background-color: #b30000;
-            }
-            #pehchanImg {
-    -webkit-filter: grayscale(10%);
-    filter: grayscale(95%);
-}
-.eventContainer {
-  position: relative;
-}
-
-.image {
-  width:304px; 
-  height:304px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #b30000;
-}
-
-.eventContainer:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-            #gallery img {  width:200px;    height:200px;   }
-            #gallery table, td {    border: 1px #70b8ff dashed; }
-            #footer {    font-size: 15px;    padding-top: 45px;    }
-            #footer .col-sm-8 {  display: flex;  justify-content: flex-end;  }
-            #footer ul { list-style: none;   }
-            #footer li img { width: 32px;    height: 32px;   }
-            #footer .glyphicon
-            {
-                font-size: 20px;
-                margin-bottom: 20px;
-                color: #b30000;
-            }
-            .slideanim 
-            {
-                visibility:hidden;
-            }
-            .slide
-            {
-                animation-name: slide;
-                -webkit-animation-name: slide;
-                animation-duration: 1s;
-                -webkit-animation-duration: 1s;
-                visibility: visible;
-            }
-            @keyframes slide 
-            {
-                0% 
-                {
-                    opacity: 0;
-                    transform: translateY(70%);
-                } 
-                100% 
-                {
-                    opacity: 1;
-                    transform: translateY(0%);
-                }
-            }
-            @-webkit-keyframes slide 
-            {
-                0% 
-                {
-                    opacity: 0;
-                    -webkit-transform: translateY(70%);
-                } 
-                100% 
-                {
-                    opacity: 1;
-                    -webkit-transform: translateY(0%);
-                }
-            }
-        </style>    <!-- background-color used in Event: #80ffbf    -->
+            
+        </style>    
     </head>
     
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -228,8 +25,6 @@
         <div class="background-img">
             <br><br><br><br><br><br><br><br>
             <img src="images/boys hostel logo.png" alt="Boys Hostel" style="width:160px;height:130px;">
-            <p style="font-size: 30px;">Shri Ramdeobaba College of Engineering and Management</p>
-            <a href="http://www.rknec.edu/">Go to College Website -></a>
         </div>
     <!--  End Boys' Hostel Image  -->
 
@@ -248,7 +43,7 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                             <li><a href="#home" class="tablinks" onclick="openContent(event, 'home')">HOME</a></li>
-                            <li><a href="#about">ABOUT</a></li>
+                            <!-- <li><a href="#about">ABOUT</a></li> -->
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="">
                                     EVENTS<span class="caret"></span>
@@ -266,7 +61,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="#comities">COMITIES</a></li>
+                            <!-- <li><a href="#comities">COMITIES</a></li> -->
                             <li><a href="#mess" class="tablinks" onclick="openContent(event, 'mess')">MESS</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="">
@@ -280,15 +75,15 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#gallery" class="tablinks" onclick="openContent(event, 'gallery')">
-                                    GALLERY</a>
+                                <a href="#gallery" class="tablinks" onclick="openContent(event, 'gallery')">GALLERY</a>
                             </li>
                             <li><a href="#contact" class="contact-btn" style="color:#FFFFFF;">CONTACT</a></li>
                         </ul>
                     
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a data-toggle="modal" data-target="#modalSignup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href="#profile" class="tablinks" onclick="openContent(event, 'profile')"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
                             <li><a data-toggle="modal" data-target="#modalLogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            <li><a href="#home" class="tablinks" onclick="openContent(event, 'home')">Logout <span class="glyphicon glyphicon-log-out"></span></a></li>
                         </ul>
                    
                     </div>
@@ -446,7 +241,7 @@
                             <div class="jumbotron" style="padding:20px;">
                                 <h3 class="text-info"><strong>Boys Hostel</strong></h3>
                                 <p>
-                                    The boys’ hostel is located at the rear end of the college. There are two hostel buildings for boys with a capacity to accommodate around 433 students. All students will be provided with double occupancy rooms. Students residing in hostel premises can avail state-of- art Gymnasium facility. A dedicated line with 3MbPs speed and a dedicated server is there in hostel premises in order to cater the Web browse need of the students. Hostels are well equipped with mess, canteen, indoor / outdoor recreational facilities. There is a generator backup for the hostels in case of break in power supply. The hostel mess is fully cooperative where the students decide menus weekly.
+                                    Empty Content........
                                 </p>
                             </div>
                         </div>
@@ -456,9 +251,7 @@
                             <div class="jumbotron" style="padding:20px;">
                                 <h3 class="text-info"><strong>Wardens & Caretakers</strong></h3>
                                 <p>
-                                    Prof. R.U.Tiwari (Warden)<br><span class="glyphicon glyphicon-phone"></span> +91-9371177758<br><br>
-                                    Prof. H.D.Bhave (Warden)<br><span class="glyphicon glyphicon-phone"></span> +91-8793340702<br><br>
-                                    Mr. Raout (Caretaker)
+                                    Empty Content........
                                 </p>
                             </div>
                         </div>
@@ -592,138 +385,40 @@
         </div>
     <!--  End HOME  -->
 
+    <!--  Student Profile  -->
+        <?php 
+            include 'profile.php';
+        ?>
+    <!--  End Student Profile  -->
+
     <!--  Pehchaan Event  -->
-        <div id="pehchaan" class="content">
-            <div class="container-fluid slideanim">
-                <div class="title slideanim"> PEHCHAAN</div>
-                <div class="container-fluid">
-                    <div class="jumbotron" style="padding:20px;">
-                        <h3 class="text-info"><strong>About</strong></h3>
-                        <p>
-                            <center>
-                                <img src="images/img.jpg" alt="Maintenance Pic" width="570" height="350"><br>
-                                <img src="images/maintenance.gif">
-                            </center>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php 
+            include 'pehchaan.php';
+        ?>
     <!--  End Pehchaan Event  -->
     
     <!--  HPL Event  -->
-        <div  id="hpl" class="content">
-            <div class="container-fluid slideanim">
-                <div class="title slideanim"> HPL</div>
-                <div class="container-fluid">
-                    <div class="jumbotron" style="padding:20px;">
-                        <h3 class="text-info"><strong>About</strong></h3>
-                        <p>
-                            <center>
-                                <img src="images/img.jpg" alt="Maintenance Pic" width="570" height="350"><br>
-                                <img src="images/maintenance.gif">
-                            </center>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php 
+            include 'hpl.php';
+        ?>
     <!--  End HPL Event  -->
 
     <!--  Sayonara Event  -->
-        <div id="sayonara" class="content">
-            <div class="container-fluid slideanim">
-                <div class="title slideanim"> SAYONARA</div>
-                <div class="container-fluid">
-                    <div class="jumbotron" style="padding:20px;">
-                        <h3 class="text-info"><strong>About</strong></h3>
-                        <p>
-                            <center>
-                                <img src="images/img.jpg" alt="Maintenance Pic" width="570" height="350"><br>
-                                <img src="images/maintenance.gif">
-                            </center>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php 
+            include 'sayonara.php';
+        ?>
     <!--  End Sayonara Event  -->
 
     <!--  Mess Section  -->
-        <div id="mess" class="content">
-            <div class="container-fluid slideanim">
-                <div class="title slideanim"> MESS</div>
-                <div class="container-fluid">
-                    <div class="jumbotron" style="padding:20px;">
-                        <h3 class="text-info"><strong>About</strong></h3>
-                        <p>
-                            <center>
-                                <img src="images/img.jpg" alt="Maintenance Pic" width="570" height="350"><br>
-                                <img src="images/maintenance.gif">
-                            </center>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php 
+            include 'mess.php';
+        ?>
     <!--  End Mess Section  -->
 
     <!--  Gallery  -->
-        <div id="gallery" class="content container-fluid">
-            <div class="title" style="padding-top:30px;"> Gallery</div>
-                <p>
-                    <center>
-                        <img src="images/img.jpg" alt="Maintenance Pic" width="570" height="350"><br>
-                        <img src="images/maintenance.gif">
-                    </center>
-                </p>
-        <!--
-            <table>
-                <tbody>
-                    <tr>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                        <td><a href="website address"><img src="URL" /></a></td>
-                    </tr>
-                </tbody>
-            </table>
-        -->
-        </div>
+        <?php 
+            include 'gallery.php';
+        ?>
     <!--  End Gallery  -->
 
     <!--  Contact Section  -->
