@@ -1,5 +1,5 @@
 <?php
-    //session_start();
+    session_start();
 
     require 'connectToDB.php';
 
@@ -18,8 +18,8 @@
             
             $row = mysqli_fetch_array($result);
 
-            //  $_SESSION['login_user'] = $username;
-
+              $_SESSION['login_user'] = $username;
+				$_SESSION['login_id'] = $orw['U_id']; // column name change required for U_id
             print $row['username'] . " login successful! ";
             
             if($row['admin']) {
