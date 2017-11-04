@@ -147,14 +147,14 @@
                             <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
                         </div>
                         <div class="modal-body">
-                            <form role="form" action="log.php">
+                            <form role="form" action="login.php" method="post">
                                 <div class="form-group">
                                     <label for="email"><span class="glyphicon glyphicon-user"></span> Username</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
                                 </div>
                                 <div class="form-group">
                                     <label for="pwd"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                                    <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password">
                                 </div>
                                 <div class="checkbox">
                                     <label><input type="checkbox"> Remember me</label>
@@ -384,6 +384,12 @@
         <!--  End Carousel  -->
         </div>
     <!--  End HOME  -->
+
+    <!--  Admin Profile  -->
+        <?php 
+            include 'admin.php';
+        ?>
+    <!--  End Admin Profile  -->
 
     <!--  Student Profile  -->
         <?php 

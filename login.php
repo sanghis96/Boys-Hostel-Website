@@ -1,25 +1,40 @@
 <?php
-//session_start();
+    //session_start();
 
-require 'connectToDB.php';
+    require 'connectToDB.php';
 
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        
+        $username = $_POST['email'];
+        $password = $_POST['pwd'];
 
-$username = $_POST['user'];
-$password = $_POST['psw'];
- 
-$result = mysqli_query($link,"select * from students where uname='$username' and password='$password'")
-or die("falied to connect".mysql_error());
+        // admin password is accepted
+        
+        $sql_querry = "SELECT * FROM login WHERE username='$username' and password=MD5('$password') ";
+        $result = mysqli_query($link, $sql_querry)
+        or die("falied to connect".mysql_error());
 
-$row = mysqli_fetch_array($result);
+        if(mysqli_num_rows($result) == 1) {
+            
+            $row = mysqli_fetch_array($result);
 
-if($row['uname'] == $username && $row['password']== $password ){
-	//  $_SESSION['login_user'] = $username;
+            //  $_SESSION['login_user'] = $username;
 
-	print " login successful! ";
-	//echo $_SESSION["login_user"];
-	//header("location: dashboard.php");
-}
-else{
-	print " invalid username password! ";
-}
+            print $row['username'] . " login successful! ";
+            
+            if($row['admin']) {
+                print "Admin";
+                header("location: admin.php");
+            } else {
+                print "Student";
+                header("location: index.php");
+            }
+
+            //echo $_SESSION["login_user"];
+            //header("location: dashboard.php");
+
+        } else{
+            print " invalid username password! ";
+        }
+    }
 ?>
